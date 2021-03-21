@@ -41,7 +41,8 @@ To create your first vignette, run:
 ```{r, eval = FALSE}
 usethis::use_vignette("my-vignette")
 ```
-
+Troubleshooting Tip: If there are errors in your R package DESCRIPTION file, usethis::use_vignette() will not run.  If you encounter this error, use load_all() to see details of where the error exists and resolve, then try running again.  
+ 
 This will:
 
 1.  Create a `vignettes/` directory.
